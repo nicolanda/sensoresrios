@@ -6,6 +6,9 @@ db = pg8000.connect(database='lecturas_rios', user='postgres', password='12345',
 app = Flask(__name__)
 CORS(app)
 
+@app.route('/')
+def hello_world():
+    return 'Hello, World!'
 
 @app.route('/add_device', methods = ['POST'])
 def add_device():
