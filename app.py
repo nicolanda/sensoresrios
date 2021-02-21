@@ -2,7 +2,7 @@ from flask import Flask, jsonify, request
 from flask_cors import CORS
 import pg8000
 
-db = pg8000.connect(database='d5i4dbpff3htlh', user='dpqajkuapfamfg', password='25a37c8cb43391f3d8b987fc278a4e363cd930a3a0d2acfe7a96ba2bf2f0709f', host='ec2-18-204-74-74.compute-1.amazonaws.com', port='5432')
+db = pg8000.connect(database='postgresql-triangular-26623', user='postgres', password='12345', host='localhost', port='5432')
 app = Flask(__name__)
 CORS(app)
 
